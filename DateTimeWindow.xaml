@@ -1,0 +1,13 @@
+﻿<Window x:Class="MergePhotos.DateTimeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DateTime" Height="100" Width="200" Loaded="Window_Loaded" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DatePicker Grid.Row="0" Margin="5" Name="DatePicker"/>
+        <Button Grid.Row="1" Width="70" IsDefault="True" Content="OK" Margin="5" Click="Button_Click"/>
+    </Grid>
+</Window>

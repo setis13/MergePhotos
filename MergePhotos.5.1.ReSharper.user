@@ -1,0 +1,148 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:Converters.cs" caret="0" fromTop="0" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:BitmapFrameStruct.cs" caret="1604" fromTop="20" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml" caret="3310" fromTop="6" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="6995" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="7262" fromTop="28" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="6036" fromTop="8" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="14" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="26" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="23" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="21" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="21" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="16" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="30" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="2" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="13" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="22" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="20" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="18789" fromTop="32" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="20857" fromTop="33" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19733" fromTop="15" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19621" fromTop="38" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="19250" fromTop="31" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="18432" fromTop="27" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="18373" fromTop="27" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="16721" fromTop="20" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="16934" fromTop="24" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="15436" fromTop="4" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="15876" fromTop="25" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="17501" fromTop="19" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml" caret="3310" fromTop="6" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="24725" fromTop="18" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="22366" fromTop="26" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="21912" fromTop="17" />
+      <File id="DA5C2510-751E-4546-8868-C9791A7052D4/f:MainWindow.xaml.cs" caret="21552" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="try" priority="0" />
+      <Item value="exception" priority="0" />
+      <Item value="MessageBox" priority="1" />
+      <Item value="YesNo" priority="0" />
+      <Item value="Yes" priority="0" />
+      <Item value="break" priority="0" />
+      <Item value="Path`0" priority="0" />
+      <Item value="out" priority="0" />
+      <Item value="diffDays" priority="0" />
+      <Item value="ErrorBlinkStyle`0" priority="0" />
+      <Item value="TimeEditorService" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="String`0" priority="1" />
+      <Item value="datetime" priority="1" />
+      <Item value="diffHours" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="Drawing" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="File`0" priority="0" />
+      <Item value="oldPath" priority="0" />
+      <Item value="Uri" priority="1" />
+      <Item value="new" priority="1" />
+      <Item value="DelayCreation" priority="0" />
+      <Item value="None" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="string" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFileName`0" priority="0" />
+      <Item value="Combine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MergePhotos.Helpers.TimeEditorService">
+      <Item value="AdjustDateTime`0" priority="0" />
+      <Item value="SetDateTime`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="OpenWrite`0" priority="0" />
+      <Item value="Open`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Close`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MergePhotos.ImageDetails">
+      <Item value="Path" priority="0" />
+      <Item value="DateTimeShot" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddDays`0" priority="0" />
+      <Item value="AddHours`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter">
+      <Item value="DateTaken" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileAccess">
+      <Item value="ReadWrite" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Media.Imaging.BitmapSource">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileShare">
+      <Item value="ReadWrite" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

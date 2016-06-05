@@ -1,0 +1,16 @@
+﻿<Window x:Class="MergePhotos.QualityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Quality" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Enter Quality" HorizontalAlignment="Center" Margin="5"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+        <Slider Name="slider" VerticalAlignment="Top" Width="200" Margin="5" Minimum="0" Maximum="100" Ticks="5" ValueChanged="SliderValueChanged" Value="75"/>
+            <TextBlock Name="textBlock"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,111 @@
+﻿<Window x:Class="MergePhotos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        SourceInitialized="Window_SourceInitialized"
+        Closed="Window_Closed"
+        xmlns:MergePhotos="clr-namespace:MergePhotos" 
+        Title="Merging Photos"
+        Height="350" Width="525" 
+        Icon="/MergePhotos;component/photo_album_256.ico"
+        Tag="bla">
+    <Window.Resources>
+        <MergePhotos:SourceIndexConverter x:Key="SourceIndexConverter"/>
+        <MergePhotos:SizeConverter x:Key="SizeConverter"/>
+        <Style TargetType="{x:Type ListBox}">
+            <!-- Set the ItemTemplate of the ListBox to a DataTemplate which
+           explains how to display an object of type BitmapImage. -->
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Set this attached property to 'Disabled' so that the
+     ScrollViewer in the ListBox will never show a horizontal
+     scrollbar, and the WrapPanel it contains will be constrained
+     to the width of the ScrollViewer's viewable surface. -->
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border BorderBrush="Black" BorderThickness="4" CornerRadius="5" Margin="6">
+                            <Image Source="{Binding Path=UriSource}" Stretch="Fill" Width="120" Height="140" />
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Grid DockPanel.Dock="Right">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                    <Button Content="&lt;&lt;" Height="25" Width="50" Padding="3,2" Margin="5" Click="LLeftClick"/>
+                    <Button Content="&lt;" Height="25" Width="50" Padding="3,2" Margin="5" Click="LeftClick"/>
+                    <Button Content="&gt;" Height="25" Width="50" Padding="3,2" Margin="5" Click="RightClick"/>
+                    <Button Content="&gt;&gt;" Height="25" Width="50" Padding="3,2" Margin="5" Click="RRightClick"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                    <Button Content="Rename" Height="25" Width="70" Padding="3,2" Margin="5" Click="SetNamesClick"/>
+                    <Button Content="Set Quality" Height="25" Width="100" Padding="3,2" Margin="5" Click="SetQualityClick"/>
+                    <TextBlock Text="date diff (hours)" Margin="10,5,5,5" VerticalAlignment="Center"/>
+                    <TextBox Width="30" Margin="5" Name="DiffTextBox"/>
+                </StackPanel>
+            </Grid>
+            <Grid DockPanel.Dock="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Content="Browser1" Name="Directory1Button" Background="Blue" Foreground="White" Padding="3,2" Margin="5" Click="Brower1Click"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Name="Directory1TextBox" Margin="5" KeyUp="Directory1TextBoxTextChanged"/>
+                <Button Grid.Row="1" Grid.Column="0" Content="Browser2" Name="Directory2Button" Background="Red" Foreground="White" Padding="3,2" Margin="5" Click="Brower2Click"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Name="Directory2TextBox" Margin="5" KeyUp="Directory2TextBoxTextChanged"/>
+                <Button Grid.Row="2" Grid.Column="0" Content="Browser3" Name="Directory3Button" Background="Green" Foreground="White" Padding="3,2" Margin="5" Click="Brower3Click"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Name="Directory3TextBox" Margin="5" KeyUp="Directory3TextBoxTextChanged"/>
+            </Grid>
+        </DockPanel>
+        <ScrollViewer Name="scrollViewer" Grid.Row="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Loaded="ScrollViewer_Loaded">
+            <ListBox Name="ImageList" ItemsSource="{Binding ImageList}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="2" BorderBrush="{Binding SourceIndex, Converter={StaticResource SourceIndexConverter}, Mode=OneWay}"  Padding="3" Margin="2">
+                            <StackPanel Orientation="Vertical">
+                                <!--image and dimensions-->
+                                <Grid>
+                                    <Image Width="150" Height="100" Margin="0,0,0,10" Source="{Binding BitmapImage}" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MouseLeftButtonDown="image_MouseDown"/>
+                                    <TextBlock Name="ImageName" Margin="1" Foreground="White" Background="{Binding SourceIndex, Converter={StaticResource SourceIndexConverter}, Mode=OneWay}" Text="{Binding FileName}" TextAlignment="Center" VerticalAlignment="Bottom"/>
+                                </Grid>
+                                <!--name, type and size-->
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                    <TextBlock Padding="2,0" Name="ImageFileRename" Margin="1" Text="{Binding FileRename}"/>
+                                    <TextBlock Padding="2,0" Name="NewDateTime" MouseLeftButtonUp="NewDateTime_MouseLeftButtonUp" Margin="1" Text="{Binding NewDateTime, StringFormat='{}{0:d MMMM yyyy HH:mm:ss}'}"/>
+                                    <TextBlock Padding="2,0" Name="Camera" Margin="1" Text="{Binding Camera, StringFormat=Camera: {0}}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+        <StackPanel Grid.Row="2">
+            <TextBlock Name="statusText" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
